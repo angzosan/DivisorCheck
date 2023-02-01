@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jun  6 14:36:34 2021
-@author: user
-"""
-
 import math
 
 def divisors(m): #find the divisors of the integer m
@@ -13,11 +7,11 @@ def divisors(m): #find the divisors of the integer m
             L.append(i)
     return L
 
-m=5636
+m=56353
 m1=str(m) #we turn the number to a string so we can find the number of bits easier
-upper=math.floor(len(m1)/2)+1
-bottom=math.floor(len(m1)/2)-1
-total=0
+upper=math.floor(len(m1)/2)+1   #setting the upper limit
+bottom=math.floor(len(m1)/2)-1   #setting the bottom limit
+total=0   # counter for the percentage
 L=divisors(m)
 print(L)
 for i in L:
